@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_tracker/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_hand2eye_calibration/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_camera_calibration/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_bridge/include/**",
+        "/home/erik/catkin_ws/devel/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/yocs_velocity_smoother/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/champ_msgs/include/**",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/champ/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/erik/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/erik/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/erik/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

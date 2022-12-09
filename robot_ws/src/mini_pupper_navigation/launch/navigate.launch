@@ -3,13 +3,14 @@
     <param name="/use_sim_time" value="true" />
     <arg name="robot_name" default="/"/>
     <arg name="rviz"       default="true"/>
+    <arg name="map_folder" default="small_house" />
 
     <arg if="$(eval arg('robot_name') == '/')"  name="frame_prefix" value="" />
     <arg unless="$(eval arg('robot_name') == '/')" name="frame_prefix" value="$(arg robot_name)/" />
     
     <group ns="$(arg robot_name)">
         <!-- Map server -->
-        <arg name="map_file" default="$(find mini_pupper_navigation)/maps/map.yaml"/>
+        <arg name="map_file" default="$(find mini_pupper_navigation)/maps/$(arg map_folder)/map.yaml"/>
         <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" >
             <param name="frame_id" value="$(arg frame_prefix)map" />
         </node>

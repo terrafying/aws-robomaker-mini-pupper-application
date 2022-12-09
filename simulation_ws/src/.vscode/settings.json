@@ -1,0 +1,11 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_tracker/lib/python3/dist-packages",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_hand2eye_calibration/lib/python3/dist-packages",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/visp_camera_calibration/lib/python3/dist-packages",
+        "/home/erik/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/yocs_velocity_smoother/lib/python3/dist-packages",
+        "/home/erik/environment/aws-robomaker-mini-pupper-application/simulation_ws/install/champ_msgs/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

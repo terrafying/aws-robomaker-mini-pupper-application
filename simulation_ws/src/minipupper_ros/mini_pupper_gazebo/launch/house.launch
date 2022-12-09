@@ -3,13 +3,14 @@
     <arg name="rviz"               default="false"/> <!-- Set to true to run rviz in parallel. -->
     <arg name="lite"               default="false" />  <!-- Set to true if you're using CHAMP lite version. Only useful for microcontrollers. -->
     <arg name="ros_control_file"   default="$(find mini_pupper_gazebo)/config/ros_control/ros_control.yaml" /> <!-- Path to ROS Control configurations. Do not touch. -->
-    <arg name="gazebo_world"       default="$(find mini_pupper_gazebo)/worlds/outdoor.world" /> <!-- Path to Gazebo world you want to load. -->
+    <arg name="gazebo_world"       default="$(find aws_robomaker_small_house_world)/worlds/small_house.world" /> <!-- Path to Gazebo world you want to load. -->
     <arg name="gui"                default="true"/>
-    <arg name="world_init_x"       default="0.0" /> <!-- X Initial position of the robot in Gazebo World -->
-    <arg name="world_init_y"       default="0.0" /> <!-- Y Initial position of the robot in Gazebo World -->
-    <arg name="world_init_heading" default="0.0" /> <!-- Initial heading of the robot in Gazebo World -->
+    <arg name="world_init_x"       default="0" /> <!-- X Initial position of the robot in Gazebo World -->
+    <arg name="world_init_y"       default="0.5" /> <!-- Y Initial position of the robot in Gazebo World -->
+    <arg name="world_init_z"       default="0.5" /> <!-- Z Initial position of the robot in Gazebo World -->
+    <arg name="world_init_heading" default="0" /> <!-- Initial heading of the robot in Gazebo World -->
 
-    <param name="use_sim_time" value="true" />
+    <param name="use_sim_time" value="false" />
 
     <include file="$(find mini_pupper_gazebo)/launch/bringup.launch">
         <arg name="robot_name"             value="$(arg robot_name)"/>
@@ -29,8 +30,8 @@
         <arg name="gazebo_world"       value="$(arg gazebo_world)"/>
         <arg name="world_init_x"       value="$(arg world_init_x)" />
         <arg name="world_init_y"       value="$(arg world_init_y)" />
+        <arg name="world_init_z"       value="$(arg world_init_z)" />
         <arg name="world_init_heading" value="$(arg world_init_heading)" />
         <arg name="gui"                value="$(arg gui)" />
     </include>    
-
 </launch>
